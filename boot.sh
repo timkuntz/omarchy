@@ -14,7 +14,8 @@ pacman -Q git &>/dev/null || sudo pacman -Sy --noconfirm --needed git
 
 echo -e "\nCloning Omarchy..."
 rm -rf ~/.local/share/omarchy/
-git clone https://github.com/basecamp/omarchy.git ~/.local/share/omarchy >/dev/null
+git clone https://github.com/timkuntz/omarchy.git ~/.local/share/omarchy >/dev/null
+git switch mac-arm-setup
 
 echo -e "\nInstallation starting..."
 source ~/.local/share/omarchy/install.sh
